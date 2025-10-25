@@ -1,0 +1,365 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Scope One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* HEADER */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 4;
+}
+
+li {
+    list-style: none;
+}
+
+
+.menu-item {
+    border-right: 1px solid #e2c9789c;
+    border-bottom: 1px solid #e2c9789c;
+    flex: 1 0 0;
+    height: 125px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: inherit;
+    transition: 0.5s;
+    font-size: 1.65rem;
+    color: #E2CA78;
+    background-color: rgba(0, 0, 0, 0.589);
+    animation-name: slide;
+    animation-duration: 1s;
+}
+
+.logo-menu {
+    height: 105px;
+    width: auto;
+}
+
+
+/* @media screen and (max-width: 1200px) {
+    .menu-item {
+        border-right: 1px solid #e2c9789c;
+        border-bottom: 1px solid #e2c9789c;
+        flex: 1 0 0;
+        height: 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: inherit;
+        transition: 0.5s;
+        font-size: 1.4rem;
+        color: #E2CA78;
+        background-color: rgba(0, 0, 0, 0.589);
+        animation-name: slide;
+        animation-duration: 1s;
+    }
+
+    .logo-menu {
+        height: 80px;
+        width: auto;
+    }
+} */
+
+
+
+
+
+
+.menu-item:hover {
+    background-color: rgba(52, 52, 52, 0.322);
+}
+
+#menu-item-4 {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+@keyframes slide {
+    from {
+        translate: 0 -200px;
+    }
+
+    to {
+        translate: 0px;
+    }
+}
+
+/* BANNER */
+
+.banner {
+    position: relative;
+    height: 100vh;
+    margin-top: -125px;
+    transition-property: height;
+    transition-duration: 0.4s;
+}
+
+.banner-img {
+    width: inherit;
+    height: inherit;
+    background-image: url(../assets/casa1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+    filter: brightness(0.7);
+
+}
+
+.banner-text {
+    height: 41vh;
+    position: absolute;
+    z-index: 2;
+    bottom: 50%;
+    left: 50%;
+    translate: -50% 50%;
+    color: white;
+    font-size: 20vh;
+    filter: none;
+    line-height: 0.5;
+    font-family: "Quattrocento", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+}
+
+.banner-logo-casa {
+    flex: 0;
+    position: relative;
+    bottom: 5vh;
+
+}
+
+.banner-logo-line {
+    flex: 0;
+    border-top: 5px solid white;
+    position: relative;
+    bottom: 4vh;
+}
+
+/* ABOUT */
+
+.about-img-container {
+    flex: 1 1 0;
+    margin-top: 5vw;
+    margin-left: 5vh;
+    margin-bottom: 5vw;
+    align-self: center;
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+}
+
+
+#about {
+    scroll-margin-top: 10vh;
+}
+
+.about-content {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5vw;
+}
+
+.about-title {
+    color: #AD8D25;
+    flex: 0 1 0;
+    font-size: 3rem;
+    font-weight: 700;
+    position: relative;
+    align-self: self-start;
+    margin-bottom: 5vh;
+    border-bottom: 1px solid #EAD99E;
+}
+
+
+@media screen and (width >=1400px) {
+    .about-container {
+        flex: 1 1 0;
+        justify-content: center;
+        min-height: 50vh;
+        background-color: #FBF7EA;
+        display: flex;
+        flex-direction: row;
+        margin: 10vh;
+        position: relative;
+    }
+
+    .about-text {
+        color: #151104;
+        position: relative;
+        font-size: 1.8rem;
+        text-align: left;
+        flex: 1 1 auto;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1399px) {
+    .about-container {
+        flex: 1 1 0;
+        justify-content: center;
+        min-height: 50vh;
+        background-color: #FBF7EA;
+        display: flex;
+        flex-direction: row;
+        margin: 10vh;
+        position: relative;
+    }
+
+    .about-text {
+        color: #151104;
+        position: relative;
+        font-size: 1.4rem;
+        text-align: left;
+        flex: 1 1 auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .menu-item {
+        border-right: 1px solid #e2c9789c;
+        border-bottom: 1px solid #e2c9789c;
+        flex: 1 0 0;
+        height: 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: inherit;
+        transition: 0.5s;
+        font-size: 1.4rem;
+        color: #E2CA78;
+        background-color: rgba(0, 0, 0, 0.589);
+        animation-name: slide;
+        animation-duration: 1s;
+    }
+
+    .logo-menu {
+        height: 80px;
+        width: auto;
+    }
+
+    .about-container {
+        flex: 1 1 0;
+        justify-content: center;
+        min-height: 50vh;
+        background-color: #FBF7EA;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 10vh;
+        position: relative;
+    }
+
+    .about-text {
+        color: #151104;
+        position: relative;
+        font-size: 1.2rem;
+        text-align: left;
+        flex: 1 1 auto;
+    }
+
+    .about-img-container {
+        flex: 1 1 0;
+        margin: 5vw;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .menu-item {
+        border-right: 1px solid #e2c9789c;
+        border-bottom: 1px solid #e2c9789c;
+        flex: 1 0 0;
+        height: 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: inherit;
+        transition: 0.5s;
+        font-size: 1.4rem;
+        color: #E2CA78;
+        background-color: rgba(0, 0, 0, 0.589);
+        animation-name: slide;
+        animation-duration: 1s;
+    }
+
+    .logo-menu {
+        height: 60px;
+        width: auto;
+    }
+
+    .about-container {
+        flex: 1 1 0;
+        justify-content: center;
+        min-height: 50vh;
+        background-color: #FBF7EA;
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .menu-item {
+        color: red;
+        display: none;
+    }
+
+    .menu-item-logo {
+        border: 1px solid #e2c9789c;
+        border-top: none;
+        flex: 1 0 0;
+        height: 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: inherit;
+        transition: 0.5s;
+        font-size: 1.4rem;
+        color: #E2CA78;
+        background-color: rgba(0, 0, 0, 0.589);
+        animation-name: slide;
+        animation-duration: 1s;
+    }
+
+    .logo-menu {
+        height: 80px;
+        width: auto;
+    }
+}

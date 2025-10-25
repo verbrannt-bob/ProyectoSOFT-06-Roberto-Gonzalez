@@ -1,46 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa Lago</title>
+    <title>CASA LAGO</title>
+    <link rel="icon" type="image/png" href="../assets/icono.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Scope+One&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <figure class="logo">
-            <img src="../assets/casa lago.png" width="250">
-            <span>Diseño que inspira</span>
-        </figure>
+    <header class="site-header">
         <nav>
-            <span><a href="./portafolio.html">Portafolio</a></span>
-            <span><a href="#equipo">Equipo</a></span>
+            <ul class="header-menu">
+                <a class="menu-item" href="#about">
+                    <li>Sobre Nosotros</li>
+                </a>
+                <a class="menu-item">
+                    <li>Portafolio</li>
+                </a>
+                <a class="menu-item menu-item-logo" href="./index.html">
+                    <li>
+                        <img src="../assets/casa lago.png" class="logo-menu">
+                    </li>
+                </a>
+                <a class="menu-item">
+                    <li>Equipo</li>
+                </a>
+                <a class="menu-item menu-item-4">
+                    <li>Contacto</li>
+                </a>
+            </ul>
         </nav>
     </header>
-    <br>
+
     <section class="banner">
-        <img src="../assets/casa1.png">
-        <img src="../assets/casa2.png">
-        <img src="../assets/casa3.png">
-    </section>
-    <section id="equipo">
-        <h2>Nuestro Equipo</h2>
-        <figure class="person">
-            <img src="../assets/istockphoto-1495088043-612x612.jpg" width="100">
-            <div>John Doe</div>
-            <div>CEO</div>
-        </figure>
-        <figure class="person">
-            <img src="../assets/istockphoto-1495088043-612x612.jpg" width="100">
-            <div>Jane Doe</div>
-            <div>CFO</div>
-        </figure>
-        <figure class="person">
-            <img src="../assets/istockphoto-1495088043-612x612.jpg" width="100">
-            <div>Fulanito de Tal</div>
-            <div>Arquitecto</div>
-        </figure>
+        <div class="banner-img"></div>
+        <!-- <div class="banner-text">
+            <div class="banner-logo-casa">C A S A</div>
+            <div class="banner-logo-line"></div>
+            <div class="banner-logo-rogue">ROGUE</div>
+        </div> -->
     </section>
 
+    <section class="about-container" id="about">
+        <div class="about-img-container">
+            <img src="../assets/casa2.png" class="about-img">
+        </div>
 
-</body>
-</html>
+        <div class="about-content">
+            <h1 class="about-title">CASA LAGO</h1>
+            <p class="about-text">
+                Somos una empresa familiar dedicada al desarrollo y construcción de proyectos
+                inmobiliarios. Desde nuestros inicios, hemos trabajado con pasión y compromiso, ofreciendo
+                soluciones que combinan calidad y confianza.
+                <br>
+                Creemos que cada proyecto es único, por eso cuidamos cada detalle: desde la planificación
+                hasta la entrega final. Nuestra experiencia y valores familiares se reflejan en la relación cercana
+                que construimos con nuestros clientes y proveedores, basada en transparencia y
+                responsabilidad.
+            </p>
+        </div>
+    </section>
