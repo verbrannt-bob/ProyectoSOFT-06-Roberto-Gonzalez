@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASA LAGO</title>
+    <link rel="icon" type="image/png" href="../assets/icono.png">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Scope+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav>
+            <ul class="header-menu">
+                <a class="menu-item" href="./index.html#about">
+                    <li>Sobre Nosotros</li>
+                </a>
+                <a class="menu-item">
+                    <li>Portafolio</li>
+                </a>
+                <a class="menu-item menu-item-logo" href="./index.html">
+                    <li>
+                        <img src="../assets/casa lago.png" class="logo-menu">
+                    </li>
+                </a>
+                <a class="menu-item">
+                    <li>Equipo</li>
+                </a>
+                <a href="./contacto.html" class="menu-item menu-item-4">
+                    <li>Contacto</li>
+                </a>
+            </ul>
+
+            <div class="menu-item-logo-mobile">
+                <a href="./index.html">
+                    <img src="../assets/casa lago.png" class="logo-menu">
+                </a>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <script src="../js/script.js"></script>
+
+    <section class="contacto">
+
+        <aside class="contact-info">
+            <div>
+                <h4 class="contactanos-title">Consultas Generales</h4>
+                <div>8888-8888</div>
+                <div>info@casalago.com</div>
+            </div>
+            <div>
+                <h4 class="contactanos-title">Contaduría</h4>
+                <div>8888-8888</div>
+                <div>contaduria@casalago.com</div>
+            </div>
+        </aside>
+        <div class="form-container">
+            <h2 class="contactanos-title">Contacto</h2>
+            <form class="formulario">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input class="contacto-input" type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellidos">Apellidos</label>
+                    <input class="contacto-input" type="text" id="apellidos" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input class="contacto-input" type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input class="contacto-input" type="tel" id="phone">
+                </div>
+                <div class="form-group big">
+                    <label for="asunto">Asunto</label>
+                    <input class="contacto-input" type="text" id="asunto">
+                </div>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+        </div>
+    </section>
